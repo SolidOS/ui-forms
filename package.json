@@ -1,0 +1,53 @@
+{
+  "name": "ui-forms",
+  "version": "0.1.0",
+  "description": "Form rendering engine for the W3C UI vocabulary, used in Solid applications",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": "./lib/index.js",
+    "./autocomplete/autocompleteBar": "./lib/autocomplete/autocompleteBar.js",
+    "./autocomplete/autocompletePicker": "./lib/autocomplete/autocompletePicker.js",
+    "./autocomplete/publicData": "./lib/autocomplete/publicData.js",
+    "./autocomplete/language": "./lib/autocomplete/language.js",
+    "./basic": "./lib/basic.js",
+    "./comment": "./lib/comment.js",
+    "./fieldFunction": "./lib/fieldFunction.js",
+    "./fieldParams": "./lib/fieldParams.js"
+  },
+  "files": [
+    "lib"
+  ],
+  "scripts": {
+    "build": "npm run build-lib && npm run build-types",
+    "build-lib": "babel src -d lib --source-maps --extensions \".ts,.js\"",
+    "build-types": "tsc --emitDeclarationOnly || true",
+    "watch": "babel src --out-dir lib --watch --source-maps --extensions \".ts,.js\"",
+    "clean": "rm -rf lib",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solidos/ui-forms.git"
+  },
+  "dependencies": {
+    "solid-ui-core": "^0.1.0"
+  },
+  "peerDependencies": {
+    "rdflib": "^2.2.34",
+    "solid-logic": "^3.0.7"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.24.1",
+    "@babel/core": "^7.24.3",
+    "@babel/plugin-proposal-class-properties": "^7.18.6",
+    "@babel/plugin-proposal-optional-chaining": "^7.21.0",
+    "@babel/plugin-transform-async-to-generator": "^7.24.1",
+    "@babel/plugin-transform-runtime": "^7.24.3",
+    "@babel/preset-env": "^7.24.3",
+    "@babel/preset-typescript": "^7.24.1",
+    "@babel/runtime": "^7.24.1",
+    "typescript": "^4.9.5"
+  }
+}

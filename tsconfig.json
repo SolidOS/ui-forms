@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "commonjs",
+    "outDir": "lib",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strictNullChecks": true,
+    "declaration": true,
+    "baseUrl": ".",
+    "paths": {
+      "solid-ui-core": ["node_modules/solid-ui-core/lib/index"],
+      "solid-ui-core/*": ["node_modules/solid-ui-core/lib/*"]
+    }
+  },
+  "include": ["src/**/*"]
+}
