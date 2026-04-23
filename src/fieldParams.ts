@@ -1,4 +1,4 @@
-import * as ns from 'solid-ui-core/ns'
+import ns from 'solid-ui-core/ns'
 import { commentStyle, formHeadingStyle, formGroupStyle } from 'solid-ui-core/style'
 
 export type FieldParamsObject = {

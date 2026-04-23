@@ -1,6 +1,6 @@
 import { BlankNode, Literal, NamedNode, Node, st, Store, Variable } from 'rdflib'
 import { solidLogicSingleton } from 'solid-logic'
-import * as ns from 'solid-ui-core/ns'
+import ns from 'solid-ui-core/ns'
 import { formFieldNameBoxStyle, textInputStyle, textInputStyleUneditable } from 'solid-ui-core/style'
 import styleConstants from 'solid-ui-core/styleConstants'
 import { label } from 'solid-ui-core/utils'

@@ -4,7 +4,7 @@ This control has the buttons which control the state between editing, viewing, s
 and so on.  See the state diagram in the documentation.  The AUtocomplete Picker does the main work.
 
 */
-import * as ns from 'solid-ui-core/ns'
+import ns from 'solid-ui-core/ns'
 import { icons } from 'solid-ui-core/iconBase'
 import { store } from 'solid-logic'
 import { askName, button, cancelButton as makeCancelButton, continueButton, deleteButtonWithCheck } from 'solid-ui-core/buttons'

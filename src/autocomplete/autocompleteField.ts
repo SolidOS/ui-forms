@@ -1,6 +1,6 @@
 /* Form field for doing autocompleete
  */
-import * as ns from 'solid-ui-core/ns'
+import ns from 'solid-ui-core/ns'
 import { store } from 'solid-logic'
 import { errorMessageBlock } from 'solid-ui-core/error'
 import { fieldLabel } from '../basic'

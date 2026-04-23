@@ -19,7 +19,7 @@ import styleConstants from 'solid-ui-core/styleConstants'
 
 import { icons } from 'solid-ui-core/iconBase'
 import * as log from 'solid-ui-core/log'
-import * as ns from 'solid-ui-core/ns'
+import ns from 'solid-ui-core/ns'
 import * as $rdf from 'rdflib'
 import { store } from 'solid-logic'
 import * as utils from 'solid-ui-core/utils'
