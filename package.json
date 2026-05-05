@@ -1,6 +1,6 @@
 {
   "name": "ui-forms",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Form rendering engine for the W3C UI vocabulary, used in Solid applications",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -32,7 +32,7 @@
     "url": "https://github.com/solidos/ui-forms.git"
   },
   "dependencies": {
-    "solid-ui-core": "^0.1.0"
+    "solid-ui-core": "^1.0.0"
   },
   "peerDependencies": {
     "rdflib": "^2.2.34",
